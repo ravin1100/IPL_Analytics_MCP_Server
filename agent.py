@@ -84,6 +84,8 @@ def get_response(user_query: str, instruction: str, sql_query: str):
 
 
 def process_query(user_query: str, instruction: str) -> str:
+    if instruction is None or instruction.strip() == "":
+        instruction = "You are an expert data analyst."
     sql_query = generate_query(user_query, 5, instruction)
     print(f"Generated SQL Query: {sql_query}")
 
