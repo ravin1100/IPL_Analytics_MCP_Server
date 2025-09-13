@@ -1,0 +1,9 @@
+fastapi[standard]
+fastmcp
+
+langchain
+langchain-community
+sqlalchemy
+
+langchain-google-genai
+
